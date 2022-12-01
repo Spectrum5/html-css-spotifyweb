@@ -17,7 +17,7 @@ body{
 .my-row .my-col {
     width: calc((100% / 6) - 10px);
     margin-right: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 button {
@@ -26,6 +26,16 @@ button {
     color: white;
     border-radius: 30px;
     cursor: pointer;
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+p {
+    color: #707378;
+    font-weight: bold;
+    padding-bottom: 30px;
 }
 
 /* ********************
@@ -75,6 +85,7 @@ main .app .content .cta {
     z-index: 20;
     text-align: right;
     padding: 30px;
+    background-color: #080b12e3;
 }
 
 main .app .content section {
@@ -90,7 +101,11 @@ main .content nav ul {
 }
 
 main .content nav ul li {
-    padding: 10px;
+    padding: 8px;
+}
+
+main .content nav ul li a {
+    font-weight: bold;
 }
 
 nav ul li {
