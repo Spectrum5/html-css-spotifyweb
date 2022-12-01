@@ -1,18 +1,130 @@
 /* ********************
     REGOLE GENERALI
 ******************** */
+.flex {
+    display: flex;
+}
 
+.container {
+    /* ??? */
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-row .my-col {
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
 
 /* ********************
     MAIN
 ******************** */
+main {
+    width: 100%;
+}
 
+main .app {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+}
+
+main .app > * {
+    height: 100%;
+}
+
+main .app .navigation {
+    width: 250px;
+    min-height: 400px;
+}
+
+main .app .navigation .nav-top {
+    height: calc(100% - 80px);
+}
+
+main .app .navigation .nav-bottom {
+    height: 80px;
+}
+
+main .app .content {
+    width: calc(100% - 250px);
+    overflow: auto;
+}
+
+main .app .content .cta {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    text-align: right;
+    padding: 30px;
+}
+
+main .app .content section {
+    padding: 0 15px;
+    margin-bottom: 30PX;
+}
+
+main .content nav ul {
+    justify-content: center;
+    padding: 10px;
+}
+
+main .content nav ul li {
+    padding: 10px;
+}
 
 /* ********************
     FOOTER
 ******************** */
+footer {
 
+}
+
+footer .player {
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
 
 /* ********************
-    DEBUG
+    MEDIA QUERY
 ******************** */
+
+/* TABLET */
+@media screen and (max-width: 1100px) {
+    .my-row .my-col {
+    width: calc((100% / 4) - 10px);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+    .my-row .my-col {
+    width: calc((100% / 2) - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main .app .navigation {
+        width: 50px;
+    }
+
+    .main .app .content {
+        width: calc(100% - 50px);
+    }
+}

@@ -1,0 +1,47 @@
+
+
+/* ********************
+    DEBUG
+******************** */
+.debug main .app {
+    background-color: aqua;
+}
+
+.debug main .app .navigation {
+    background-color: greenyellow;
+}
+
+.debug main .app .content {
+    background-color: cyan;
+}
+
+.debug main .app .content .cta {
+    background-color: rgba(255, 0, 0, 0.5);
+    /* height: 100px; */
+}
+
+.debug footer .player{
+    color: white;
+}
+
+.debug footer .player >* {
+    background-color: pink;
+    padding: 20px;
+}
+
+.debug .my-row {
+    background-color: yellow;
+}
+
+.debug .my-row .my-col {
+    background-color: red;
+    height: 50px;
+}
+
+.debug main .app .navigation .nav-top {
+    background-color: purple;
+}
+
+.debug main .app .navigation .nav-bottom {
+    background-color: lightcoral;
+}
