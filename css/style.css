@@ -1,12 +1,12 @@
 /* ********************
     REGOLE GENERALI
 ******************** */
-.flex {
-    display: flex;
+body{
+    font-family: 'Montserrat', sans-serif;
 }
 
-.container {
-    /* ??? */
+.flex {
+    display: flex;
 }
 
 .my-row {
@@ -35,6 +35,7 @@ main {
     width: 100%;
 }
 
+/* ***** ASIDE ***** */
 main .app {
     width: 100%;
     height: calc(100vh - 100px);
@@ -52,15 +53,20 @@ main .app .navigation {
 
 main .app .navigation .nav-top {
     height: calc(100% - 80px);
+    background-color: #000000;
 }
 
 main .app .navigation .nav-bottom {
     height: 80px;
 }
 
+/* ***** MAIN CONTENT ***** */
+
 main .app .content {
     width: calc(100% - 250px);
     overflow: auto;
+    background-color: #141922;
+    color: white;
 }
 
 main .app .content .cta {
@@ -76,6 +82,8 @@ main .app .content section {
     margin-bottom: 30PX;
 }
 
+/* ***** NAV MAIN ***** */
+
 main .content nav ul {
     justify-content: center;
     padding: 10px;
@@ -85,12 +93,25 @@ main .content nav ul li {
     padding: 10px;
 }
 
+nav ul li {
+    color: #707378;
+    position: relative;
+}
+
+.active::before {
+    height: 0.15rem;
+    width: 2rem;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background-color: greenyellow;
+    position: absolute;
+}
+
 /* ********************
     FOOTER
 ******************** */
-footer {
-
-}
 
 footer .player {
     height: 100px;

@@ -4,19 +4,15 @@
     DEBUG
 ******************** */
 .debug main .app {
-    background-color: aqua;
+    background-color: red;
 }
 
 .debug main .app .navigation {
     background-color: greenyellow;
 }
 
-.debug main .app .content {
-    background-color: cyan;
-}
-
 .debug main .app .content .cta {
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #080b12e3;
     /* height: 100px; */
 }
 
@@ -35,11 +31,7 @@
 
 .debug .my-row .my-col {
     background-color: red;
-    height: 50px;
-}
-
-.debug main .app .navigation .nav-top {
-    background-color: purple;
+    height: 100px;
 }
 
 .debug main .app .navigation .nav-bottom {
