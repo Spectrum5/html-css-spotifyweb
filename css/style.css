@@ -176,6 +176,13 @@ main .app .content section {
     margin-bottom: 30PX;
 }
 
+.img-circle {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
 /* ***** NAV MAIN ***** */
 
 main .content nav ul {
