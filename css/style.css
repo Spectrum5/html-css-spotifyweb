@@ -32,11 +32,28 @@ h2 {
     padding-bottom: 20px;
 }
 
+h4 {
+    color: white;
+}
+
 p {
     color: #707378;
     font-weight: bold;
     padding-bottom: 30px;
 }
+
+.gray {
+    color: #707378;
+}
+
+.white {
+    color: white;
+}
+
+li span {
+    color: #707378;
+}
+
 
 /* ********************
     MAIN
@@ -50,9 +67,10 @@ main .app {
     width: 100%;
     height: calc(100vh - 100px);
     display: flex;
+    overflow: hidden;
 }
 
-main .app > * {
+main .app > *{
     height: 100%;
 }
 
@@ -64,10 +82,75 @@ main .app .navigation {
 main .app .navigation .nav-top {
     height: calc(100% - 80px);
     background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
+
+.app .navigation .nav-top .playlist {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px 10px;
+    border-left: 3px solid transparent;
+}
+
+.app .navigation .nav-top .playlist .list-playlist {
+    height: 100%; 
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.app .navigation .nav-top .playlist .list-playlist li {
+    padding-bottom: 15px;
+}
+
+main .app .navigation .nav-top .logo{
+    padding: 15px;
+}
+
+main .app .navigation .nav-top .logo .large-logo {
+    width: 70%;
+}
+
+main .app .navigation .nav-top .logo .small-logo {
+    display: none;
+}
+
+main .app .navigation .nav-top .main-menu a {
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-left: 3px solid transparent;
+}
+
+main .app .navigation .nav-top .main-menu a.active-green {
+    border-color: greenyellow;
+}
+
+main .app .navigation .nav-top .main-menu a >* {
+    vertical-align: middle;
+}
+
+main .app .navigation .nav-top .main-menu a img {
+    width: 30px;
+    display: inline-block;
+}
+
 
 main .app .navigation .nav-bottom {
     height: 80px;
+}
+
+.button-playlist {
+    font-size: 35px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.playlist-h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* ***** MAIN CONTENT ***** */
@@ -98,6 +181,7 @@ main .app .content section {
 main .content nav ul {
     justify-content: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 main .content nav ul li {
@@ -156,11 +240,33 @@ footer .player {
 }
 
 @media screen and (max-width: 600px) {
-    .main .app .navigation {
+
+    main .app .navigation {
         width: 50px;
     }
 
-    .main .app .content {
+    main .app .content {
         width: calc(100% - 50px);
     }
+    
+    main .app .navigation .nav-top .logo {
+        padding: 4px 10px;
+    }
+
+    main .app .navigation .nav-top .logo .small-logo {
+        display: block;
+    }
+
+    main .app .navigation .nav-top .logo .large-logo {
+        display: none;
+    }
+
+    main .app .navigation .nav-top .main-menu a span {
+        display: none;
+    }
+
+    main .app .navigation .nav-top .playlist {
+        display: none;
+    }
 }
+
