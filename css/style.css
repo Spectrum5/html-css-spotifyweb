@@ -18,6 +18,7 @@ body{
     width: calc((100% / 6) - 10px);
     margin-right: 10px;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 button {
@@ -103,6 +104,8 @@ main .app .navigation .nav-top {
 
 .app .navigation .nav-top .playlist .list-playlist li {
     padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.75rem;
 }
 
 main .app .navigation .nav-top .logo{
@@ -181,6 +184,15 @@ main .app .content section {
     aspect-ratio: 1/1;
     border-radius: 100%;
     object-fit: cover;
+}
+
+.my-col .col-title {
+    padding-top: 1rem;
+}
+
+.my-col .col-subtitle {
+    padding-top: 0.5rem;
+    color: #707378;
 }
 
 /* ***** NAV MAIN ***** */
