@@ -288,6 +288,37 @@ footer .player {
     justify-content: space-between;
     position: relative;
     z-index: 10;
+    align-items: center;
+}
+
+.img-song {
+    width: 3.5rem;
+    height: auto;
+    padding-right: 10px;
+}
+
+.player .playing {
+    justify-content: space-between;
+    color: white;
+    padding-left: 10px;
+    width: 250px;
+}
+
+.desc-song {
+    font-size: 0.7rem;
+    justify-content: center;
+}
+
+.player .playing .info-song .desc-song span {
+    color: #707378;
+    font-weight: bold;
+}
+
+.button-song {
+    color: #707378;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
 }
 
 /* ********************
