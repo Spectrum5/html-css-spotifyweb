@@ -9,6 +9,10 @@ body{
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .my-row {
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +68,8 @@ main {
 }
 
 /* ***** ASIDE ***** */
+
+/* Aside Top */
 main .app {
     width: 100%;
     height: calc(100vh - 100px);
@@ -155,6 +161,50 @@ main .app .navigation .nav-bottom {
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
+/* Aside Bottom */
+
+.nav-bottom {
+    background-color: #000;
+    color: #707378;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.nav-bottom .install {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.nav-bottom .author {
+    color: white;
+    margin-top: 10px;
+}
+
+.author-img {
+    background-color: gray;
+    border-radius: 50%;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.circle-arrow {
+    border: 1.5px solid #707378;
+    border-radius: 100%;
+    font-size: 0.7rem;
+    width: 1rem;
+    aspect-ratio: 1;
+    text-align: center;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 /* ***** MAIN CONTENT ***** */
 
