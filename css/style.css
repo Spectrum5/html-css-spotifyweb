@@ -245,6 +245,29 @@ main .app .content section {
     color: #707378;
 }
 
+/* Hover image */
+
+.hover-container {
+    position: relative;
+}
+
+.hover-container .hover-img {
+    display: none;
+}
+
+.hover-container:hover .hover-img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ***** NAV MAIN ***** */
 
 main .content nav ul {
