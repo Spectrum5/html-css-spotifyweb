@@ -33,6 +33,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    transform: scale(1.1);
+}
+
 h2 {
     padding-bottom: 20px;
 }
@@ -133,6 +137,22 @@ main .app .navigation .nav-top .main-menu a {
     border-left: 3px solid transparent;
 }
 
+.nav-top .gray-white{
+    color: #707378;
+}
+
+.nav-top,a:hover {
+    color: white;
+}
+
+.nav-top,span:hover {
+    color: white;
+}
+
+.nav-top,.gray-white:hover {
+    color: white;
+}
+
 main .app .navigation .nav-top .main-menu a.active-green {
     border-color: greenyellow;
 }
@@ -149,6 +169,11 @@ main .app .navigation .nav-top .main-menu a img {
 
 main .app .navigation .nav-bottom {
     height: 80px;
+}
+
+.nav-bottom .install:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .button-playlist {
@@ -266,6 +291,7 @@ main .app .content section {
     font-size: 4rem;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 /* ***** NAV MAIN ***** */
@@ -282,6 +308,10 @@ main .content nav ul li {
 
 main .content nav ul li a {
     font-weight: bold;
+}
+
+main .content nav ul li a:hover {
+    color: white;
 }
 
 nav ul li {
@@ -338,12 +368,24 @@ footer .player {
     font-weight: bold;
 }
 
+.player .playing .info-song .desc-song a:hover {
+    text-decoration: underline;
+    color: rgba(24, 97, 255, 0.493);
+}
+
 .button-song {
     color: #707378;
     align-items: center;
     gap: 10px;
     margin-right: 20px;
 }
+
+.button-song i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
 
 .range-audio {
     -webkit-appearance: none;
@@ -371,7 +413,6 @@ footer .player {
     width: 30rem;
     height: 5px;
     vertical-align: middle;
-    margin: 15px;
   }
 
   .player-ul {
@@ -382,6 +423,11 @@ footer .player {
   
   .big-button {
     font-size: 2rem;
+  }
+
+  .big-button i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
   }
 
 /* ********************
