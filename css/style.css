@@ -289,6 +289,7 @@ footer .player {
     position: relative;
     z-index: 10;
     align-items: center;
+    color: white;
 }
 
 .img-song {
@@ -320,6 +321,22 @@ footer .player {
     gap: 10px;
     margin-right: 20px;
 }
+
+input[type="range"] {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ececec 0%, #ececec 20%, #707378 20%, #707378 100%);
+    cursor: pointer;
+    width: 8rem;
+    height: 5px;
+    margin-right: 20px;
+    vertical-align: middle;
+  }
+
+  .audio .fa-solid {
+    padding-right: 10px;
+    font-size: 0.75rem;
+  }
 
 /* ********************
     MEDIA QUERY
@@ -369,4 +386,3 @@ footer .player {
         display: none;
     }
 }
-
