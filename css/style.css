@@ -322,20 +322,43 @@ footer .player {
     margin-right: 20px;
 }
 
-input[type="range"] {
+.range-audio {
     -webkit-appearance: none;
     border-radius: 10px;
     background: linear-gradient(to right, #ececec 0%, #ececec 20%, #707378 20%, #707378 100%);
     cursor: pointer;
-    width: 8rem;
     height: 5px;
-    margin-right: 20px;
     vertical-align: middle;
+  }
+
+  .audio {
+    padding-right: 20px;
   }
 
   .audio .fa-solid {
     padding-right: 10px;
     font-size: 0.75rem;
+  }
+
+  .range-center {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ececec 0%, #ececec 20%, #707378 20%, #707378 100%);
+    cursor: pointer;
+    width: 30rem;
+    height: 5px;
+    vertical-align: middle;
+    margin: 15px;
+  }
+
+  .player-ul {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .big-button {
+    font-size: 2rem;
   }
 
 /* ********************

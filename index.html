@@ -306,14 +306,44 @@
                 </div>
 
                 <div class="controls">
-                    CENTER
+                    <div class="button-player">
+                        <ul class="player-ul flex">
+                            <li>
+                                <i class="fa-solid fa-shuffle"></i>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-backward-step"></i>
+                            </li>
+
+                            <li>
+                                <div class="big-button">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-forward-step"></i>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-arrow-rotate-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="range-player">
+                        <span>0:25</span>
+                        <input class="range-center" type="range" value="20" min="0" max="100"/>
+                        <span>4:35</span>
+                    </div>
                 </div>
 
                 <div class="audio">
-                    <i class="fa-solid fa-list-ul"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
-                    <input type="range" value="20" min="0" max="100" oninput="rangevalue.value=value"/>
+                    <a href="#"><i class="fa-solid fa-list-ul"></i></a>
+                    <a href="#"><i class="fa-solid fa-display"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                    <input class="range-audio" type="range" value="20" min="0" max="100"/>
                 </div>
                 
             </div>
