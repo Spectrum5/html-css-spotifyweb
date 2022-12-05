@@ -1,0 +1,480 @@
+/* ********************
+    REGOLE GENERALI
+******************** */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-row .my-col {
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 30px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    padding-bottom: 20px;
+}
+
+h4 {
+    color: white;
+}
+
+p {
+    color: #707378;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+.gray {
+    color: #707378;
+}
+
+.white {
+    color: white;
+}
+
+li span {
+    color: #707378;
+}
+
+
+/* ********************
+    MAIN
+******************** */
+main {
+    width: 100%;
+}
+
+/* ***** ASIDE ***** */
+
+/* Aside Top */
+main .app {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    overflow: hidden;
+}
+
+main .app > *{
+    height: 100%;
+}
+
+main .app .navigation {
+    width: 250px;
+    min-height: 400px;
+}
+
+main .app .navigation .nav-top {
+    height: calc(100% - 80px);
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app .navigation .nav-top .playlist {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px 10px;
+    border-left: 3px solid transparent;
+}
+
+.app .navigation .nav-top .playlist .list-playlist {
+    height: 100%; 
+    overflow: auto;
+    margin-top: 10px;
+}
+
+.app .navigation .nav-top .playlist .list-playlist li {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+main .app .navigation .nav-top .logo{
+    padding: 15px;
+}
+
+main .app .navigation .nav-top .logo .large-logo {
+    width: 70%;
+}
+
+main .app .navigation .nav-top .logo .small-logo {
+    display: none;
+}
+
+main .app .navigation .nav-top .main-menu a {
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-left: 3px solid transparent;
+}
+
+.nav-top .gray-white{
+    color: #707378;
+}
+
+.nav-top,a:hover {
+    color: white;
+}
+
+.nav-top,span:hover {
+    color: white;
+}
+
+.nav-top,.gray-white:hover {
+    color: white;
+}
+
+main .app .navigation .nav-top .main-menu a.active-green {
+    border-color: greenyellow;
+}
+
+main .app .navigation .nav-top .main-menu a >* {
+    vertical-align: middle;
+}
+
+main .app .navigation .nav-top .main-menu a img {
+    width: 30px;
+    display: inline-block;
+}
+
+
+main .app .navigation .nav-bottom {
+    height: 80px;
+}
+
+.nav-bottom .install:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.button-playlist {
+    font-size: 35px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.playlist-h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Aside Bottom */
+
+.nav-bottom {
+    background-color: #000;
+    color: #707378;
+    padding: 6px 10px;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.nav-bottom .install {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+}
+
+.nav-bottom .author {
+    color: white;
+    margin-top: 10px;
+}
+
+.author-img {
+    background-color: gray;
+    border-radius: 50%;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.circle-arrow {
+    border: 1.5px solid #707378;
+    border-radius: 100%;
+    font-size: 0.7rem;
+    width: 1rem;
+    aspect-ratio: 1;
+    text-align: center;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* ***** MAIN CONTENT ***** */
+
+main .app .content {
+    width: calc(100% - 250px);
+    overflow: auto;
+    background-color: #141922;
+    color: white;
+}
+
+main .app .content .cta {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    text-align: right;
+    padding: 30px;
+    background-color: #080b12e3;
+}
+
+main .app .content section {
+    padding: 0 15px;
+    margin-bottom: 30PX;
+}
+
+.img-circle {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.my-col .col-title {
+    padding-top: 1rem;
+}
+
+.my-col .col-subtitle {
+    padding-top: 0.5rem;
+    color: #707378;
+}
+
+/* Hover image */
+
+.hover-container {
+    position: relative;
+}
+
+.hover-container .hover-img {
+    display: none;
+}
+
+.hover-container:hover .hover-img {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* ***** NAV MAIN ***** */
+
+main .content nav ul {
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+main .content nav ul li {
+    padding: 8px;
+}
+
+main .content nav ul li a {
+    font-weight: bold;
+}
+
+main .content nav ul li a:hover {
+    color: white;
+}
+
+nav ul li {
+    color: #707378;
+    position: relative;
+}
+
+.active::before {
+    height: 0.15rem;
+    width: 2rem;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    background-color: greenyellow;
+    position: absolute;
+}
+
+/* ********************
+    FOOTER
+******************** */
+
+footer .player {
+    height: 100px;
+    background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+    color: white;
+}
+
+.img-song {
+    width: 3.5rem;
+    height: auto;
+    padding-right: 10px;
+}
+
+.player .playing {
+    justify-content: space-between;
+    color: white;
+    padding-left: 10px;
+    width: 250px;
+}
+
+.desc-song {
+    font-size: 0.7rem;
+    justify-content: center;
+}
+
+.player .playing .info-song .desc-song span {
+    color: #707378;
+    font-weight: bold;
+}
+
+.player .playing .info-song .desc-song a:hover {
+    text-decoration: underline;
+    color: rgba(24, 97, 255, 0.493);
+}
+
+.button-song {
+    color: #707378;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.button-song i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.range-audio {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ececec 0%, #ececec 20%, #707378 20%, #707378 100%);
+    cursor: pointer;
+    height: 5px;
+    vertical-align: middle;
+  }
+
+  .audio {
+    padding-right: 20px;
+  }
+
+  .audio .fa-solid {
+    padding-right: 10px;
+    font-size: 0.75rem;
+  }
+
+  .range-center {
+    -webkit-appearance: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ececec 0%, #ececec 20%, #707378 20%, #707378 100%);
+    cursor: pointer;
+    width: 30rem;
+    height: 5px;
+    vertical-align: middle;
+  }
+
+  .player-ul {
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .big-button {
+    font-size: 2rem;
+  }
+
+  .big-button i:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+/* ********************
+    MEDIA QUERY
+******************** */
+
+/* TABLET */
+@media screen and (max-width: 1100px) {
+    .my-row .my-col {
+    width: calc((100% / 4) - 10px);
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+    .my-row .my-col {
+    width: calc((100% / 2) - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    main .app .navigation {
+        width: 50px;
+    }
+
+    main .app .content {
+        width: calc(100% - 50px);
+    }
+    
+    main .app .navigation .nav-top .logo {
+        padding: 4px 10px;
+    }
+
+    main .app .navigation .nav-top .logo .small-logo {
+        display: block;
+    }
+
+    main .app .navigation .nav-top .logo .large-logo {
+        display: none;
+    }
+
+    main .app .navigation .nav-top .main-menu a span {
+        display: none;
+    }
+
+    main .app .navigation .nav-top .playlist {
+        display: none;
+    }
+}

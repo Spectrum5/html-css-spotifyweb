@@ -1,0 +1,34 @@
+
+
+/* ********************
+    DEBUG
+******************** */
+.debug main .app {
+    background-color: red;
+}
+
+.debug main .app .navigation {
+    background-color: greenyellow;
+}
+
+.debug footer .player{
+    color: white;
+}
+
+.debug footer .player >* {
+    background-color: pink;
+    padding: 20px;
+}
+
+.debug .my-row {
+    background-color: yellow;
+}
+
+.debug .my-row .my-col {
+    background-color: red;
+    height: 100px;
+}
+
+.debug main .app .navigation .nav-bottom {
+    background-color: lightcoral;
+}
